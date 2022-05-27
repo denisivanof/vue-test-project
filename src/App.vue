@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <div class="container">
+      <BreadCrumbs :breadcrumbs="breadcrumbs"/>
+    </div>
+  </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import BreadCrumbs from "@/components/BreadCrumbs/BreadCrumbs";
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: {BreadCrumbs},
+  data(){
+    return {
+      breadcrumbs:[
+        {name: 'Главная', path: '#'},
+        {name: 'Системы хранения', path: '#'},
+        {name: 'Комплекты стеллажных систем', path: '#'},
+      ]
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "app.scss";
 </style>
