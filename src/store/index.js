@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+import ShelvingKits from "@/store/modules/ShelvingKits";
 
 export const store = createStore({
     state: {},
@@ -6,6 +7,6 @@ export const store = createStore({
     mutations: {},
     actions: {},
     modules: {
-
+        ShelvingKits
     },
 })

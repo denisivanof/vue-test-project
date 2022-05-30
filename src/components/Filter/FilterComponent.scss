@@ -1,0 +1,50 @@
+.filter{
+  margin-top: 32px;
+  max-width: 288px;
+  width: 100%;
+  height: 82px;
+  font-family: 'SF Pro Display';
+  margin-right: 24px;
+  position: relative;
+}
+.filter__title{
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #4F4F4F;
+}
+.filter__select{
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+.filter__select-input{
+  height: 40px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F2F2F2;
+}
+.filter__select-dropdown{
+  position: relative;
+  z-index: 10;
+  margin-top: 1px;
+  width: 100%;
+  background: #F2F2F2;
+}
+.filter__select-list{
+  padding-left: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.filter__select-list:hover{
+  background: #d5d6d9;
+  cursor: pointer;
+}
