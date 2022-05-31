@@ -29,6 +29,16 @@
   align-items: center;
   justify-content: space-between;
   background: #F2F2F2;
+  @media (max-width: 470px) {
+    padding-right: 10px;
+  }
+}
+.filter__select-arrow{
+  transition: 300ms;
+}
+.filter__select-arrow--turn{
+  transform: rotate(0.5turn);
+  transition: 300ms;
 }
 .filter__select-dropdown{
   position: relative;

@@ -5,7 +5,11 @@
     <div class="filter__select-input"
          @click="toggle"
     >
-      {{filter.selected.name}}<span><img src="../../assets/icon.png"></span></div>
+      {{filter.selected.name}}
+      <span>
+        <img :class="[dropdown ? 'filter__select-arrow--turn' : 'filter__select-arrow',]" src="../../assets/icon.png">
+      </span>
+    </div>
       <ul class="filter__select-dropdown" v-if="dropdown">
         <li class="filter__select-list"
             v-for="item in filter.filterList" :key="item.id"

@@ -1,19 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-//@font-face{
-//  font-family: "SF Pro Display";
-//  src: url("./assets/SFProDisplay-Regular.woff2") format("truetype");
-//  font-style: normal;
-//  font-weight: 400;
-//  font-display: swap;
-//}
-ul{
-  list-style: none;
-  margin: 0;
-}
+@import "config";
 .app{
   min-width: 320px;
   padding-top: 32px;
